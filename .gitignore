@@ -24,3 +24,6 @@ Thumbs.db
 dist/
 build/
 
+# Generated content
+server/uploads/
+server/frames/

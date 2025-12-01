@@ -1,0 +1,14 @@
+{
+  "name": "frame-generation-analise",
+  "version": "1.0.0",
+  "description": "Run client and server concurrently",
+  "scripts": {
+    "start": "concurrently \"npm:start --prefix server\" \"npm:dev --prefix client\"",
+    "ci:server": "npm install --prefix server",
+    "ci:client": "npm install --prefix client",
+    "install-all": "concurrently \"npm:ci:server\" \"npm:ci:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
